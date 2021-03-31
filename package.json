@@ -1,0 +1,31 @@
+{
+    "name": "tiktok_bot",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "dev": "nodemon",
+        "build": "rimraf ./build && tsc",
+        "start": "yarn build && node build/index.js",
+        "serve": "nodemon build/index.js",
+        "lint": "eslint . --ext .ts"
+    },
+    "dependencies": {
+        "dotenv": "^8.2.0",
+        "node-fetch": "^2.6.1",
+        "telegraf": "^4.3.0"
+    },
+    "devDependencies": {
+        "@types/node": "^14.14.37",
+        "@types/node-fetch": "^2.5.8",
+        "@typescript-eslint/eslint-plugin": "^4.20.0",
+        "@typescript-eslint/parser": "^4.20.0",
+        "eslint": "^7.23.0",
+        "eslint-config-prettier": "^8.1.0",
+        "nodemon": "^2.0.7",
+        "prettier": "^2.2.1",
+        "rimraf": "^3.0.2",
+        "ts-node": "^9.1.1",
+        "typescript": "^4.2.3"
+    }
+}
