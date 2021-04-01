@@ -7,7 +7,7 @@
         "dev": "nodemon",
         "build": "rimraf ./build && tsc",
         "start": "yarn build && node build/index.js",
-        "serve": "nodemon build/index.js",
+        "serve": "node build/index.js",
         "lint": "eslint . --ext .ts"
     },
     "dependencies": {
