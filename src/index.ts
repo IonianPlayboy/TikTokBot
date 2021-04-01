@@ -7,7 +7,7 @@ dotenv.config();
 
 const BOT_TOKEN = process.env.BOT_TOKEN || "";
 const PORT = process.env.PORT || 3000;
-const URL = process.env.URL || "https://tiktok-preview-bot.herokuapp.com/";
+const URL = process.env.URL || "https://tiktok-preview-bot.herokuapp.com";
 
 const expressApp = express();
 
